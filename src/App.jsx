@@ -22,6 +22,11 @@ function App() {
       special: category.special,
     }));
     setCategoriesList(browserCategories);
+    
+    // Set first category as default
+    if (browserCategories.length > 0) {
+      handleSetCategory(browserCategories[0]);
+    }
   }, []);
 
   useEffect(() => {
