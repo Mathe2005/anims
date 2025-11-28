@@ -82,7 +82,7 @@ function Menu({ animationList, activeCategory, fastSlots, setFastSlots, walkStyl
 
   return (
     <div className="animation__main">
-      <p className="main__header">Анимации</p>
+      <p className="main__header">ანიმაციები</p>
       <div className="main__list">
         {animationList.map((animation) => (
           <div
@@ -105,9 +105,9 @@ function Menu({ animationList, activeCategory, fastSlots, setFastSlots, walkStyl
         ))}
       </div>
       <div className="quick__block">
-        <p className="quick__title">Быстрый доступ</p>
+        <p className="quick__title">სწრაფი წვდომა</p>
         <p className="quick__subtitle">
-          Для добавления/удаления анимации в быстрый доступ - зажмите ЛКМ и перетащите анимацию в нужную ячейку
+          მაუსის მარცხენა კლიკით შეგიძლიათ ანიმაციების სწრაფ სლოტში დამატება.
         </p>
         <div className="quick__menu">
           {[1, 2, 3, 4, 5, 6].map((i) => (
@@ -143,7 +143,7 @@ function Menu({ animationList, activeCategory, fastSlots, setFastSlots, walkStyl
         </div>
       </div>
       <p className="help__footer">
-        <span>ESC</span> - Закрыть окно
+        <span>ESC</span> - რათა დახუროთ
       </p>
     </div>
   );
