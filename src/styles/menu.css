@@ -1,0 +1,248 @@
+
+.animation__main{
+    position: absolute;
+    width: 19.563vw;
+    height: 52.125vw;
+    right: 0.313vw;
+    top: 50%;
+    transform: translateY(-50%);
+    color:rgba(229, 255, 255, 1.0);
+}
+
+.main__header{
+    width: 100%;
+    height: 1.063vw;
+    text-align: center;
+    margin-bottom: 0.938vw;
+    font-size: 0.875vw;
+}
+
+.main__list{
+    width: 100%;
+    height: 27.625vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-right: 0.3125vw;
+    margin-bottom: 1.875vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.main__list::-webkit-scrollbar {
+    width: 0.125vw;
+}
+
+.main__list::-webkit-scrollbar-track {
+    background: rgba(229, 255, 255, 0.07);
+}
+
+.main__list::-webkit-scrollbar-thumb {
+    background: rgba(43, 217, 217, 1.0);
+}
+
+.main__cell{
+    z-index: 999;
+    width: 6vw;
+    height: 6.438vw;
+    margin-right: 0.563vw;
+    margin-top: 0.625vw;
+    cursor: pointer;
+}
+
+.main__cell svg{
+    fill: rgba(229, 255, 255, 0.4);
+    display: block;
+}
+
+.main__cell:nth-child(3n){
+    margin-right: 0;
+}
+
+.main__cell:nth-child(1),
+.main__cell:nth-child(2),
+.main__cell:nth-child(3){
+    margin-top: 0;
+}
+
+.main__cell:hover .cell__image,
+.main__cell.active .cell__image{
+    background-image: url('../img/border.svg');
+    background-size: 100%;
+}
+
+.main__cell:hover .cell__image::after,
+.main__cell.active .cell__image::after{
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(43, 217, 217, 0.06),rgba(43, 217, 217, 0) 50%);
+}
+
+.main__cell:hover svg,
+.main__cell.active svg{
+    fill: rgba(43, 217, 217, 1.0);
+}
+
+.cell__image{
+    pointer-events: none;
+    position: relative;
+    width: 4.750vw;
+    height: 4.750vw;
+    margin: 0 auto 0.313vw auto;
+    background: rgba(19, 26, 27, 0.7);
+    padding: 1.25vw;
+}
+
+.cell__image svg{
+    width: 100%;
+    height: 100%;
+}
+
+.cell__text{
+    pointer-events: none;
+    width: 100%;
+    height: 1.375vw;
+    text-align: center;
+}
+
+.cell__title{
+    font-weight: 600;
+    font-size: 0.625vw;
+    color: rgba(229, 255, 255, 1.0);
+    line-height: 0.750vw;
+}
+
+.cell__subtitle{
+    font-size: 0.500vw;
+    color: rgba(229, 255, 255, 0.4);
+    line-height: 0.606vw;
+}
+
+.quick__block{
+    width: 100%;
+    height: 18.938vw;
+    margin-bottom: 0.625vw;
+}
+
+.quick__title{
+    width: 100%;
+    height: 1.063vw;
+    text-align: center;
+    font-size: 1.063vw;
+    line-height: 1.063vw;
+    margin-bottom: 0.313vw;
+}
+
+.quick__subtitle{
+    width: 17.438vw;
+    height: 2.813vw;
+    font-size: 0.750vw;
+    line-height: 0.938vw;
+    margin: 0 auto 1.250vw auto;
+    text-align: center;
+    color: rgba(229, 255, 255, 0.2);
+}
+
+.quick__menu{
+    width: 100%;
+    height: 13.500vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__cell{
+    position: relative;
+    width: 6vw;
+    height: 6.438vw;
+    margin-right: 0.625vw;
+    margin-top: 0.625vw;
+    z-index: 2;
+}
+
+.menu__cell:nth-child(3n){
+    margin-right: 0;
+}
+
+.menu__cell:nth-child(1),
+.menu__cell:nth-child(2),
+.menu__cell:nth-child(3){
+    margin-top: 0;
+}
+
+.slot__number{
+    position: absolute;
+    width: 1.375vw;
+    height: 1.375vw;
+    right: 0.500vw;
+    bottom: 0.125vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.125vw;
+    font-style: italic;
+    color: rgba(229, 255, 255, 0.15);
+    pointer-events: none;
+}
+
+.anim__slot{
+    position: absolute;
+    top: 0;
+    left: 0.625vw;
+    right: 0.625vw;
+    height: 4.750vw;
+}
+
+.anim__slot.free{
+    background: url('../img/border.svg');
+    background-size: cover;
+}
+
+.anim__slot.drag{
+    background:rgba(43, 217, 217, 0.05);
+}
+
+.anim__slot svg{
+    fill: rgba(229, 255, 255, 0.15);
+}
+
+.cell__close{
+    position: absolute;
+    right: 0.313vw;
+    top: 0.313vw;
+    width: 0.5vw;
+    height: 0.5vw;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.cell__close svg{
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cell__close:hover svg{
+    fill: rgba(43, 217, 217, 1.0);
+}
+
+.help__footer{
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.750vw;
+    color: rgba(229, 255, 255, 0.2);
+}
+
+.help__footer span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875vw;
+    color: rgba(229, 255, 255, 0.4);
+}
