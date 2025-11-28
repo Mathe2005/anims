@@ -13,7 +13,9 @@
     height: 1.063vw;
     text-align: center;
     margin-bottom: 0.938vw;
+    margin-top: 0.5vw;
     font-size: 0.875vw;
+    line-height: 1.063vw;
 }
 
 .main__list{
@@ -195,15 +197,17 @@
     left: 0.625vw;
     right: 0.625vw;
     height: 4.750vw;
+    border: 1px solid rgba(223, 0, 91, 0.3);
+    background: rgba(19, 26, 27, 0.3);
 }
 
 .anim__slot.free{
-    background: url('../img/border.svg');
-    background-size: cover;
+    border: 1px solid rgba(223, 0, 91, 0.2);
 }
 
 .anim__slot.drag{
-    background:rgba(43, 217, 217, 0.05);
+    background: rgba(223, 0, 91, 0.05);
+    border: 1px solid rgba(223, 0, 91, 0.5);
 }
 
 .anim__slot svg{
