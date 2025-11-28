@@ -1,4 +1,11 @@
 
+@font-face {
+    font-family: 'BPG Nino Mtavruli';
+    src: url('/fonts/bpg_nino_mtavruli_bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 *,*::before,*::after{
     margin: 0;
     padding: 0;
@@ -11,7 +18,7 @@
 html,body{
     width: 100%;
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'BPG Nino Mtavruli', 'Montserrat', sans-serif;
     font-weight: 500;
     overflow:hidden;
 }
